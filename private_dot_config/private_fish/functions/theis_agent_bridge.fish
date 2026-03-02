@@ -2,7 +2,7 @@
 
 function theis_agent_bridge
   if test -z "$SSH_AUTH_SOCK"
-      set -x SSH_AUTH_SOCK $HOME/.ssh/agent.sock
+      set -Ux SSH_AUTH_SOCK $HOME/.ssh/agent.sock
   end
 
   if not test -S "$SSH_AUTH_SOCK"
