@@ -1,7 +1,9 @@
 {{  if eq .chezmoi.os "linux" }}
 {{    if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 
+# SSH redirect for Bitwarden
 theis_agent_bridge
 
 {{    end }}
 {{  end}}
+
